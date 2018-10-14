@@ -1,0 +1,6 @@
+<view>
+  <button type="default" onTap="onTapFilter" disabled="{{active}}">
+    <slot>
+    </slot>
+  </button>
+</view>

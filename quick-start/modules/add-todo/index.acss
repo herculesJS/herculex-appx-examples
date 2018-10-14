@@ -1,0 +1,14 @@
+.todos-add-todo-container {
+  display: flex;
+  background-color: white;
+  align-items: center;
+}
+.todos-add-todo-container .am-amount-value {
+  border: 1px solid grey;
+  height: 70rpx;
+}
+.todos-add-todo-container .submitButton {
+  margin-left: 10rpx;
+  padding-left: 10rpx;
+  padding-right: 10rpx;
+}

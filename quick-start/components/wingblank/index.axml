@@ -1,0 +1,6 @@
+<view 
+  class="wingblank"
+  style="marginLeft:{{size}}rpx;marginRight:{{size}}rpx"
+>
+  <slot></slot>
+</view>

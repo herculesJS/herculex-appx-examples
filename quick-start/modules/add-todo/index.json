@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "usingComponents": {
+    "ws": "../../components/whitespace/index",
+    "wb": "../../components/wingblank/index"
+  }
+}

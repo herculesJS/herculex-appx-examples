@@ -1,0 +1,102 @@
+page {
+  min-height: 100%;
+  background: #F5F5F5;
+}
+/* .container {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: center;
+} */
+.container {
+  width: 100%;
+  min-height: 100%;
+}
+.bg-white {
+  background: #fff;
+}
+.content {
+  width: 100%;
+}
+.link {
+  text-align: center;
+  color: #0af;
+}
+.hairline,
+.hairline-top,
+.hairline-bottom {
+  position: relative;
+}
+.hairline-top:before,
+.hairline-bottom:after,
+.hairline:before,
+.hairline:after {
+  position: absolute;
+  content: '';
+  display: block;
+  left: 0;
+  right: 0;
+  height: 1px;
+  -webkit-transform: scaleY(0.5);
+  transform: scaleY(0.5);
+  background-color: #eee;
+}
+.hairline-top:before,
+.hairline:before {
+ top: 0;
+}
+.hairline-bottom:after,
+.hairline:after {
+ bottom: 0;
+}
+
+.hairborder,
+.tiny-button{
+  position: relative;
+}
+.hairborder:after,
+.tiny-button:after{
+  content: '';
+  display: block;
+  box-sizing: border-box;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 200%;
+  height: 200%;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  transform: scale(0.5);
+  transform-origin: 0 0;
+}
+.hairborder-radius-4px:after {
+  border-radius: 8px;
+}
+.tiny-button {
+  font-size: 28rpx;
+  padding: 0 0.7em;
+  height: 60rpx;
+  line-height: 60rpx;
+  text-align: center;
+  border-radius: 4rpx;
+}
+
+.a-button.withIcon {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.a-button.withIcon:before {
+  content: '';
+  display: inline-block;
+  width: 34rpx;
+  height: 34rpx;
+  margin-right: 13rpx;
+}
+.a-button.withIcon.plus:before {
+  background: url('../../assets/icon-plus.png') center no-repeat;
+  background-size: 100% 100%;
+}

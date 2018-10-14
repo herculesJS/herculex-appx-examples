@@ -1,0 +1,8 @@
+<view>
+  <text>列表</text>
+  <list>
+    <list-item a:for="{{todos}}" onClick="toggleTodo" data-todo-id="{{item.id}}">
+      <text style="textDecoration:{{item.completed ? 'line-through' : 'none'}}">{{item.text}}</text>
+    </list-item>
+  </list>
+</view>

@@ -1,0 +1,10 @@
+<view
+  class="container">
+  <text>
+    点击了{{value}}次
+  </text>
+  <button onTap="onIncrement">+</button>
+  <button onTap="onDecrement">-</button>
+  <button onTap="incrementIfOdd">奇数增加</button>
+  <button onTap="incrementAsync">异步增加</button>
+</view>

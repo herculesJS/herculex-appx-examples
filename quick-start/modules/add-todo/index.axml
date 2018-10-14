@@ -1,0 +1,11 @@
+<view class="todos-add-todo-container">
+  <input
+    class="am-amount-value"
+    value="{{value}}" 
+    onInput="onInput"
+    onConfirm="onConfirm"
+    placeholder="请输入要做的事情" 
+    controlled="{{true}}" 
+    />
+    <button class="submitButton" onTap="addToDo">增加事项</button>
+</view>

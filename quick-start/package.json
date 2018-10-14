@@ -1,0 +1,11 @@
+{
+  "private": true,
+  "scripts": {
+    "ayarn-install": "ayarn install"
+  },
+  "dependencies": {
+    "herculex": "^0.1.1",
+    "mini-antui": "0.3.10-alpha.3",
+    "moment": "^2.22.2"
+  }
+}

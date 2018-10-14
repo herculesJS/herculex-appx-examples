@@ -1,0 +1,6 @@
+<view
+  class="todos-container">
+  <add-todo />
+  <visible-todo-list />
+  <footer />
+</view>

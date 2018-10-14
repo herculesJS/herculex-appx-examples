@@ -1,0 +1,8 @@
+{
+  "component": true,
+  "usingComponents": {
+    "ws": "../../components/whitespace/index",
+    "wb": "../../components/wingblank/index",
+    "filter-link": "../../modules/todo-filter-link/index"
+  }
+}

@@ -1,0 +1,8 @@
+<view>
+  <filter-link filter="{{VisibilityFilters.SHOW_ALL}}"> 全部    
+  </filter-link>
+  <filter-link filter="{{VisibilityFilters.SHOW_ACTIVE}}"> 未完成    
+  </filter-link>
+  <filter-link filter="{{VisibilityFilters.SHOW_COMPLETED}}"> 已完成    
+  </filter-link>
+</view>
