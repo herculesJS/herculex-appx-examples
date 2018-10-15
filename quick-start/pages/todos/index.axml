@@ -1,6 +1,12 @@
 <view
   class="todos-container">
   <add-todo />
+  <ws size="30" />  
   <visible-todo-list />
   <footer />
+  <ws size="30" />
+  <text>
+    统计：共 {{$getters.counts}} 个事项
+  </text>
+  <ws size="30" />  
 </view>

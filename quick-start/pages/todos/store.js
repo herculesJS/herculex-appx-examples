@@ -10,6 +10,7 @@ export default new Store({
     visibilityFilter: VisibilityFilters.SHOW_ALL
   },
   getters: {
+    counts: state => state.getIn('todos').length,
   },
   plugins: [
     'logger',
@@ -26,7 +27,6 @@ export default new Store({
       });
     },
     toggleTodo(state, payload) {
-      console.log('pppp', payload)
       state.todos.forEach(todo => {
         if (todo.id === payload) {
           todo.completed = !todo.completed

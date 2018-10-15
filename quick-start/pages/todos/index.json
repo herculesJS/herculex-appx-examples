@@ -1,6 +1,7 @@
 {
   "defaultTitle": "TODO 列表",
   "usingComponents": {
+    "ws": "../../components/whitespace/index",    
     "add-todo": "../../modules/add-todo/index",
     "visible-todo-list": "../../modules/visible-todo-list/index",
     "footer": "../../components/todo-footer/index"
