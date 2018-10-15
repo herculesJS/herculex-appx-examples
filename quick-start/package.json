@@ -1,7 +1,7 @@
 {
   "private": true,
   "scripts": {
-    "ayarn-install": "ayarn install"
+    "install": "yarn install"
   },
   "dependencies": {
     "herculex": "^0.1.1",
