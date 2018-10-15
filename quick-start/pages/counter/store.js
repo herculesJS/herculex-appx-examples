@@ -1,4 +1,5 @@
 import Store from 'herculex';
+import * as services from '../../services/counter';
 
 export default new Store({
   connectGlobal: true,
@@ -16,6 +17,9 @@ export default new Store({
     },
     DECREMENT(state) {
       --state.value
+    },
+    REQUEST_ADD(state, value) {
+      state.value += value;
     }
   },
   actions: {
@@ -23,6 +27,10 @@ export default new Store({
       setTimeout(function() {
         commit('INCREMENT');
       }, 1000);
+    },
+    async incrementRequest({ commit }) {
+      const value = await services.addNumber();
+      commit('REQUEST_ADD', value);
     }
   },
 });

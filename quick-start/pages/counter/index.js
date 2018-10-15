@@ -1,6 +1,7 @@
 import store from './store';
 
 Page(store.register({
+  // you can use mapActionsToMethods instead
   onLoad(options) {
     // this.dispatch('getBankList');
     console.log('demo onLoad, options: ', options);
@@ -31,5 +32,8 @@ Page(store.register({
   },
   incrementAsync() {
     this.dispatch('incrementAsync');
+  },
+  incrementRequest() {
+    this.dispatch('incrementRequest')
   }
 }));

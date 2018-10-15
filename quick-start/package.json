@@ -1,8 +1,6 @@
 {
   "private": true,
-  "scripts": {
-    "install": "yarn install"
-  },
+  "scripts": {},
   "dependencies": {
     "herculex": "^0.1.1",
     "mini-antui": "0.3.10-alpha.3",
