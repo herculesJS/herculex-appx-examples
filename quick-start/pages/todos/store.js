@@ -6,11 +6,20 @@ let nextTodoId = 0
 export default new Store({
   connectGlobal: true,
   state: {
+    cardDetail: {
+      id:123,
+      xxInfo: {
+        detail: {
+          name: 'xxx'
+        }
+      }
+    },
     todos: [],
     visibilityFilter: VisibilityFilters.SHOW_ALL
   },
   getters: {
     counts: state => state.getIn('todos').length,
+    cardDetailName: state => state.getIn(['cardDetail', 'xxInfo', 'detail', 'name'], ''),
   },
   plugins: [
     'logger',

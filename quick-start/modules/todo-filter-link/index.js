@@ -1,9 +1,6 @@
 import { connect } from 'herculex';
 
 const withStore = connect({
-  data: {
-    value: ''
-  },
   mapStateToProps: {
     active: (state, _, props) => {
       return props.getIn('filter') === state.getIn('visibilityFilter');

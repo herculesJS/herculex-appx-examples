@@ -1,7 +1,8 @@
 {
   "pages": [
     "pages/counter/index",
-    "pages/todos/index"
+    "pages/todos/index",
+    "pages/api/index"
   ],
   "window": {
     "defaultTitle": "hercules example simple quick-start collection",

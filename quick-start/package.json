@@ -2,8 +2,13 @@
   "private": true,
   "scripts": {},
   "dependencies": {
-    "herculex": "^0.1.1",
+    "herculex": "^0.2.0",
+    "herculex-appx-plugin-api": "^0.1.1",
     "mini-antui": "0.3.10-alpha.3",
     "moment": "^2.22.2"
+  },
+  "anymock": {
+    "mockServer": "https://anymock.alipay.com/mock/external",
+    "projectId": "5bc4bf5bc80c7466715306b9"
   }
 }

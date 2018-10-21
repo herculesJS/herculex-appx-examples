@@ -1,0 +1,8 @@
+<view
+  class="todos-container">
+  <button onTap="onIncrement">抓取数据</button>  
+  <text>
+    数据 {{$getters.item + ''}}
+  </text>
+  <ws size="30" />  
+</view>

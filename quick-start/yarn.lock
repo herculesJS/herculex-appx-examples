@@ -2,9 +2,15 @@
 # yarn lockfile v1
 
 
-herculex@^0.1.1:
-  version "0.1.2"
-  resolved "http://registry.npm.alibaba-inc.com/herculex/download/herculex-0.1.2.tgz#e509299055abe1dc2f6487c575fe9d95f2784fa3"
+herculex-appx-plugin-api@^0.1.1:
+  version "0.1.1"
+  resolved "http://registry.npm.alibaba-inc.com/herculex-appx-plugin-api/download/herculex-appx-plugin-api-0.1.1.tgz#1fac8ef61d29e06e1a80991d695ac5730c825c68"
+  dependencies:
+    normalizr "^3.3.0"
+
+herculex@^0.2.0:
+  version "0.2.0"
+  resolved "http://registry.npm.alibaba-inc.com/herculex/download/herculex-0.2.0.tgz#1fb3d84fea6fedeb5014043ff170816031efefce"
   dependencies:
     immer "^1.7.2"
     immutability-helper "^2.8.1"
@@ -42,3 +48,7 @@ mini-antui@0.3.10-alpha.3:
 moment@^2.22.2:
   version "2.22.2"
   resolved "http://registry.npm.alibaba-inc.com/moment/download/moment-2.22.2.tgz#3c257f9839fc0e93ff53149632239eb90783ff66"
+
+normalizr@^3.3.0:
+  version "3.3.0"
+  resolved "https://registry.yarnpkg.com/normalizr/-/normalizr-3.3.0.tgz#6f44b95e8bf2201845a9e551920c4e5861166d27"
