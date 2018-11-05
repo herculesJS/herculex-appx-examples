@@ -9,7 +9,7 @@ export default new Store({
   getters: {
   },
   plugins: [
-    'logger',
+    // 'logger',
   ],
   mutations: {
     INCREMENT(state) {

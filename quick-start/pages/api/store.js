@@ -5,9 +5,10 @@ import * as services from '../../services/api';
 export default new Store({
   state: {},
   getters: {
-    item: state => state.getIn(['$result', 'fetchGitHubFeeds', 'value'], '')
+    item: state => state.getIn(['$result', 'fetchGitHubFeeds', 'value'], ''),
+    itemLoading: state => state.getIn(['$loading', 'fetchGitHubFeeds', 'isLoading'], '')
   },
-  plugins: [
+  plugins: [  
     'logger',
     api({
       logger: true,
@@ -15,12 +16,18 @@ export default new Store({
     })
   ],
   services: servicesCreactor(services),
+  methods: {
+    onIncrement() {
+      this.dispatch('handleIncrement');
+    }
+  },
   actions: {
-    pageOnLoad({ dispatch }, p) {
-      dispatch('$service:fetchGitHubFeeds');
+    async pageOnLoad({ dispatch, getters }) {
+      const a = await dispatch('$service:fetchGitHubFeeds');
+      console.log('a', getters.getIn('item'));
     },
-    pageOnReady() {
-
+    handleIncrement() {
+      console.log(11111)      
     },
   },
 });

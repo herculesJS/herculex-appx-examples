@@ -9,3 +9,4 @@
   <button onTap="incrementAsync">异步增加</button>
   <button onTap="incrementRequest">请求增加</button>
 </view>
+

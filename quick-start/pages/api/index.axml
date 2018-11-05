@@ -2,6 +2,9 @@
   class="todos-container">
   <button onTap="onIncrement">抓取数据</button>  
   <text>
+    isloading: {{$getters.itemLoading + ''}}
+  </text>
+  <text>
     数据 {{$getters.item + ''}}
   </text>
   <ws size="30" />  
