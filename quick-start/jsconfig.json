@@ -1,0 +1,7 @@
+{
+    "compilerOptions": {
+        "checkJs": true,
+        "isolatedModules": true,
+        "target": "es6"
+    }
+}

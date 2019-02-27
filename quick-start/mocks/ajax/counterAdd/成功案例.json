@@ -1,0 +1,14 @@
+{
+  "success": true,
+  "value": 1231,
+  "__anymock_config": {
+    "iid": "5bc4bfc0e433bcf5ea19427f",
+    "interfaceName": "/counterAdd",
+    "interfaceAlias": "counterAdd ",
+    "contentType": "js_object",
+    "rid": "5bc4bfdb8384a57ec121d2ca",
+    "name": "成功案例",
+    "mid": "5bc4bfdb89e107814280c4f7",
+    "isActive": true
+  }
+}

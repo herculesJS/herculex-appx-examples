@@ -18,7 +18,7 @@ export default new Store({
     DECREMENT(state) {
       --state.value
     },
-    REQUEST_ADD(state, value) {
+    REQUEST_ADD(state, { value }) {
       state.value += value;
     }
   },
@@ -29,8 +29,9 @@ export default new Store({
       }, 1000);
     },
     async incrementRequest({ commit }) {
-      const value = await services.addNumber();
-      commit('REQUEST_ADD', value);
+      const value = await services.addNumber().catch(console.log);
+      console.log('vvvv234234', value);
+      commit('REQUEST_ADD', { value });
     }
   },
 });

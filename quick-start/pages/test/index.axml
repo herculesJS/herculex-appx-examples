@@ -1,0 +1,16 @@
+<view>
+  <view>
+    <text>query: {{ query }}</text>
+  </view>
+  <view a:for="{{ list }}" a:for-item="item">
+    <navigator url="{{ item.url }}">{{ item.url }}</navigator>
+  </view>
+  <text>
+  </text>
+  
+<view a:for="{{ list }}" a:for-item="item">
+  <text data-url="{{ item.url }}" onTap="jump">{{ item.url }}        
+  </text>
+</view>
+
+</view >

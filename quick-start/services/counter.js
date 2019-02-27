@@ -8,7 +8,7 @@ export function addNumber() {
           resolve(res.data.value);
         }
       },
-      fail: err => reject(err)
+      fail: err => console.log(err)
     });
   });
 }
